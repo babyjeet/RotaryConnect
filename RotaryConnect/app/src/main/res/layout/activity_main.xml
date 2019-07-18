@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.aquagiraffe.rotaryconnect.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgRotary"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rotary_2018_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_below="@+id/imgRotary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_rctp_app"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/mobile_number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_below="@+id/txtMobile"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_below="@+id/edtMobile"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Password:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/txtPassword"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Haven't Registered?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtRegister1"
+        android:layout_below="@+id/edtPassword"
+        android:layout_toRightOf="@+id/txtRegister"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtRegister1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="#00517E"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+
+</RelativeLayout>

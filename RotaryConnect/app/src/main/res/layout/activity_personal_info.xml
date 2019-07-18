@@ -1,0 +1,143 @@
+<RelativeLayout
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_spouseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_spouseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_spouseName"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_spouseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_spouseName">
+
+                    <EditText
+                        android:id="@+id/input_spouseNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:hint="@string/hint_spouseNumber"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_spouseNumber"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/spnSpGender"
+                    android:entries="@array/Gender1"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_spouseBday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spnSpGender"
+                    android:hint="Spouse's Date of Birth">
+
+                    <br.com.sapereaude.maskedEditText.MaskedEditText
+                        android:id="@+id/input_spouseBday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/bday_calendar"
+                        android:inputType="numberDecimal"
+                        android:typeface="monospace"
+                        mask:mask="##/##/####" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_anniversaryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_spouseBday"
+                    android:hint="Wedding Anniversary Date">
+
+                    <br.com.sapereaude.maskedEditText.MaskedEditText
+                        android:id="@+id/input_anniversaryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/bday_calendar"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:typeface="monospace"
+                        mask:mask="##/##/####" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnAddKid"
+                    android:text="Add a Kid"
+                    android:minHeight="30dp"
+                    android:layout_below="@+id/input_layout_anniversaryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btnAddKid"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="30dp"
+                    android:text="@string/btn_sign_up"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnAddKid"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/btn_next"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="30dp"
+                    android:text="@string/btn_skip"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

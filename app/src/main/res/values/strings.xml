@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">RCTP Connect</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_membeerid">Member ID</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_age">Age (In Years)</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_orgnname">Organisation Name</string>
+    <string name="hint_classification">Classification</string>
+    <string name="hint_vocation">Vocation</string>
+    <string name="hint_subvocation">Sub-Vocation</string>
+
+    <string name="hint_spouseName">Spouse Name</string>
+    <string name="hint_spouseNumber">Spouse Number</string>
+    <string name="hint_spouseBday">Spouse Birthdate</string>
+    <string name="hint_anniversaryDate">Anniversary Date</string>
+    <string name="hint_kid1Bday">Kid\'s Birthday</string>
+
+    <string name="btn_sign_up">Next</string>
+    <string name="btn_skip">Skip>></string>
+
+    /******************************************************************************************/
+
+    <string name="enter_kid_mobile_number">Enter Kid Mobile Number</string>
+    <string name="enter_kid_name">Enter Kid Name</string>
+    <string name="enter_newsletter_name">Enter Announcement Name</string>
+    <string name="save">Save</string>
+    <string name="create_a_newsletter">Create a Newsletter</string>
+
+    <string name="change_pwd">Change</string>
+    <string name="change_pwd_password">Enter Password</string>
+    <string name="change_pwd_cnfrm_password">Confirm Password</string>
+
+    <string name="write_file">This app needs access to your file storage so that it can write files.</string>
+
+    <string name="spinner_title">Select event</string>
+    <string name="personal_info">RC Thane Premium\nRotary Registration</string>
+
+    <string name="icon_user">&#xf2c0;</string>
+    <string name="icon_directory">&#xf2b9;</string>
+    <string name="icon_find_us">&#xf00e;</string>
+    <string name="icon_anounsement">&#xf0a1;</string>
+    <string name="icon_event">&#xf073;</string>
+    <string name="icon_news">&#xf1ea;</string>
+    <string name="icon_library_rotary">&#xf02d;</string>
+    <string name="icon_gallary">&#xf03e;</string>
+    <string name="icon_map">&#xf041;</string>
+    <string name="icon_director">&#xf0c0;</string>
+    <string name="icon_past_pre">&#xf2c1;</string>
+    <string name="icon_international">&#xf19c;</string>
+    <string name="icon_bell">&#xf0f3;</string>
+
+</resources>

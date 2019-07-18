@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Gender">
+        <item>Kid's Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="spnMaplist">
+        <item>Select location</item>
+        <item>TMA, Hall, Near Dwarka Hotel, Wagle Estate, Thane West</item>
+        <item>Conference Hall,Smt.Savitridevi Thirani Vidyamandir Vartak Nagar Pokharan Road 1, Thane West</item>
+        <item>All Heavens Banquet Hall Flower Valley, Eastern Express Highway,Runwal Nagar, Thane West</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="Gender1">
+        <item>Spouse's Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

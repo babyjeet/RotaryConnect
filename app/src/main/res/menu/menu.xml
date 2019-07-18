@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/exit2"
+        android:title="  Logout"
+        app:showAsAction="always|withText"
+        android:orderInCategory="1"
+        android:iconTint="#a1cdd8"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title=" "
+        app:showAsAction="always|withText"
+        android:orderInCategory="0"/>
+
+    <item
+        android:id="@+id/action_download"
+        android:icon="@drawable/baseline_cloud_download_black_48dp"
+        android:title=" "
+        android:visible="false"
+        app:showAsAction="always|withText"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/action_notification"
+        android:title=""
+        app:showAsAction="withText|always"
+        android:actionLayout="@layout/action_bar_notifitcation_icon"
+        android:orderInCategory="0"
+        android:visible="false"
+        android:icon="@drawable/ic_notifications"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:visible="false"
+        android:id="@+id/download_image"
+        app:showAsAction="always|withText"
+        android:title=" ">
+    </item>
+
+    <item
+        android:visible="false"
+        android:id="@+id/flag"
+        android:icon="@drawable/ic_flag_black_24dp"
+        app:showAsAction="always|withText"
+        android:title=" "
+        >
+    </item>
+
+    <item
+        android:visible="false"
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info_black_24dp"
+        app:showAsAction="always"
+        android:title="about us">
+
+    </item>
+
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "482673194832",
+    "firebase_url": "https://rotaryconnect-5dbdc.firebaseio.com",
+    "project_id": "rotaryconnect-5dbdc",
+    "storage_bucket": "rotaryconnect-5dbdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482673194832:android:628a2f5e8755c56f",
+        "android_client_info": {
+          "package_name": "com.example.niharprabhu.rotaryconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482673194832-7fdmtuk74viaraikkdh37lrdk6ed5sb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.niharprabhu.rotaryconnect",
+            "certificate_hash": "d3d9b62bb5ebd499c5a7daee1b38c0386d72b9bf"
+          }
+        },
+        {
+          "client_id": "482673194832-p7fqmom217klr6p5vf825dr52epnb4ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeOXtHCRg3DdGF-aGpa_99QRSKeDB1oVk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482673194832-p7fqmom217klr6p5vf825dr52epnb4ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

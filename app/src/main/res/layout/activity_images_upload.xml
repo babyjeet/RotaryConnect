@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8e123b5b"
+    android:layout_height="match_parent"
+    tools:context=".ImagesUpload">
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"/>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nImage Upload"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+       <RelativeLayout
+           android:layout_above="@+id/footer"
+           android:layout_below="@+id/toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <Spinner
+               android:id="@+id/spinner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:spinnerMode="dropdown"
+               android:textSize="15sp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:animateLayoutChanges="true"
+               android:background="@drawable/spinner_border"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="24dp"
+               android:prompt="@string/spinner_title" />
+
+           <TextView
+               android:id="@+id/imgUpload"
+               android:layout_below="@+id/spinner"
+               android:layout_marginTop="20dp"
+               android:layout_centerInParent="true"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:textSize="45dp"
+               android:textColor="#a2cad4"
+               android:text="@string/icon_gallary" />
+
+           <ImageView
+               android:id="@+id/imgdelete"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:visibility="invisible"
+               android:layout_alignTop="@+id/imgUpload"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginEnd="12dp"
+               android:layout_marginRight="12dp"
+               android:background="@drawable/delete" />
+           <ProgressBar
+               android:id="@+id/myProgressBar"
+               android:layout_width="match_parent"
+               android:layout_centerInParent="true"
+               android:visibility="gone"
+               android:layout_height="wrap_content"
+               android:indeterminate="true"
+               android:indeterminateBehavior="cycle"
+                />
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imgUpload"
+                android:layout_margin="10dp"
+                android:background="@drawable/grid_items_border"
+                android:layout_above="@+id/btnSend"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></GridView>
+
+
+
+           <Button
+               android:id="@+id/btnSend"
+               android:layout_width="wrap_content"
+               android:background="@drawable/button_border"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:textColor="#ffffff"
+               android:layout_alignParentBottom="true"
+               android:layout_centerHorizontal="true"
+               android:layout_marginBottom="21dp"
+               android:text="Submit" />
+
+       </RelativeLayout>
+
+
+
+</RelativeLayout>

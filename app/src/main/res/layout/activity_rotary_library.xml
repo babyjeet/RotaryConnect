@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.android.aquagiraffe.rotaryconnect.RotaryLibraryActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nRotary Library"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="#bd182249"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/footer"
+        >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#e9182249"/>
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#CEF9FF"
+            android:text="Material for Rotary Club of Thane Premium\n(District 3142 Rotary International)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtBook"
+            android:text="Upload a Book"
+            android:layout_below="@+id/txtLabel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#CEF9FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            android:id="@+id/myProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/grid_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBook"
+            android:layout_marginTop="10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_library_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImgBook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="29dp"
+            android:src="@drawable/plus"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shadow_effect"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        />
+
+</RelativeLayout>
+    <!--android:background="#00828F"-->

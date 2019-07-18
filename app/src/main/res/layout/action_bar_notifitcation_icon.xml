@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:clickable="true"
+    style="@android:style/Widget.ActionButton">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hotlist_bell"
+            android:src="@drawable/ic_notifications"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="bell"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notification_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relative"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/circle_shape"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        android:text=""
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d3192850"
+    tools:context="com.android.aquagiraffe.rotaryconnect.DashboardActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+        <ImageView
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:text="RC Thane Premium"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Welcome , "
+            android:textSize="18sp"
+            android:textColor="#a1cdd8"/>
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_toRightOf="@+id/txtWelcome"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="#82B6F2"/>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_below="@+id/txtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:numColumns="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/gridView"
+                android:layout_above="@+id/dots_indicator"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/footer"
+            android:layout_height="28dp"
+            app:dotsColor="#d7c9c9"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="#0AE3FF"
+            app:progressMode="true"
+            />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/footer" />
+</RelativeLayout>
+
+    <!--#d3192850-->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_cross"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_cancle_pdf" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pdf4"
+        android:layout_height="32dp"
+        android:id="@+id/spacecraftImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/nameTxt"
+        android:singleLine="true"
+        />
+
+</LinearLayout>

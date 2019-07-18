@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.aquagiraffe.rotaryconnect.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgRotary"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rotary_2018_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_below="@+id/imgRotary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Mobile Number:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_below="@+id/txtMobile"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnOTP"
+        android:layout_below="@+id/edtMobile"
+        android:background="#00517E"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Get OTP"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtOTP"
+        android:layout_below="@+id/btnOTP"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="OTP (4 Digit):"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtOTP"
+        android:layout_below="@+id/txtOTP"
+        android:background="@drawable/border"
+        android:inputType="numberPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_below="@+id/edtOTP"
+        android:layout_centerHorizontal="true"
+        android:background="#00517E"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

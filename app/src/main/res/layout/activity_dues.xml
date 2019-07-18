@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#F0F0F0"
+    android:layout_height="match_parent"
+    tools:context=".Dues">
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        />
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+        android:id="@+id/txtAppbar"
+        android:layout_marginLeft="5dp"
+        android:text="RC Thane Premium\nDues"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_marginLeft="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/txtHead"
+                    android:text="Rotary Thane Premium Trust"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountName0"
+                    android:layout_marginTop="18dp"
+                    android:text="Acount Name : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountName"
+                    android:textSize="10dp"
+                    android:text="Rotary Thane Premium Trust"
+                    android:layout_toRightOf="@+id/txtAccountName0"
+                    android:layout_below="@+id/txtHead"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountno0"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10dp"
+                    android:text="Account No : "
+                    android:layout_below="@+id/txtAccountName0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountno"
+                    android:text="103110100001594"
+                    android:layout_toRightOf="@+id/txtAccountName0"
+                    android:layout_below="@+id/txtAccountName"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountType0"
+                    android:layout_marginTop="4dp"
+                    android:text="Account Type : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtAccountno0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountType"
+                    android:text="Savings"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/txtAccountType0"
+                    android:layout_below="@+id/txtAccountno"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/txtBank0"
+                    android:layout_marginTop="4dp"
+                    android:text="Bank  : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtAccountType0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtBank"
+                    android:text="TJSB Bank, Louis Wadi Branch"
+                    android:layout_toRightOf="@+id/txtAccountType0"
+                    android:layout_below="@+id/txtAccountType"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="IFSC : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtBank0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="10dp"
+                    android:text="TJSB0000103"
+                    android:layout_toRightOf="@+id/txtAccountType0"
+                    android:layout_below="@+id/txtBank"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/card1"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/txtHead2"
+                    android:text="Rotary Club Thane Premium"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountName000"
+                    android:layout_marginTop="18dp"
+                    android:text="Acount Name : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtHead2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountName_"
+                    android:text="Rotary Club Thane Premium"
+                    android:layout_toRightOf="@+id/txtAccountName000"
+                    android:layout_below="@+id/txtHead2"
+                    android:layout_marginTop="18dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountno000"
+                    android:layout_marginTop="4dp"
+                    android:text="Account No : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtAccountName000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountno_"
+                    android:text="103110100001126"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/txtAccountName000"
+                    android:layout_below="@+id/txtAccountName_"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountType000"
+                    android:layout_marginTop="4dp"
+                    android:text="Account Type : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtAccountno000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAccountType_"
+                    android:text="Savings"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/txtAccountType000"
+                    android:layout_below="@+id/txtAccountno_"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/txtBank000"
+                    android:layout_marginTop="4dp"
+                    android:text="Bank  : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtAccountType000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtBank_"
+                    android:text="TJSB Bank, Louis Wadi Branch"
+                    android:layout_toRightOf="@+id/txtAccountType000"
+                    android:layout_below="@+id/txtAccountType_"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="IFSC : "
+                    android:textSize="10dp"
+                    android:layout_below="@+id/txtBank000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="TJSB0000103"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/txtAccountType000"
+                    android:layout_below="@+id/txtBank_"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+       <android.support.v7.widget.CardView
+           android:id="@+id/card3"
+           android:layout_below="@+id/card2"
+           android:layout_marginTop="30dp"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:padding="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/txtHead3"
+                   android:text="Fee Dues for Single Member*"
+                   android:textStyle="bold"
+                   android:textSize="15dp"
+                   android:textColor="#000"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/Semi"
+                   android:layout_marginTop="10dp"
+                   android:textSize="10dp"
+                   android:text="Semi-Annual Due Amount is:"
+                   android:layout_below="@+id/txtHead3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/amount"
+                   android:text="12,400*2[cheque]"
+                   android:layout_toRightOf="@+id/Semi"
+                   android:layout_marginTop="10dp"
+                   android:textSize="10dp"
+                   android:layout_marginLeft="26dp"
+                   android:layout_below="@+id/txtHead3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/amount2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/txtHead3"
+                   android:layout_marginLeft="26dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_toRightOf="@+id/amount"
+                   android:text="24,800"
+                   android:textSize="10dp" />
+
+               <TextView
+                   android:id="@+id/rotary"
+                   android:layout_marginTop="8dp"
+                   android:textSize="10dp"
+                   android:text="Rotary Thane Premium Trust:"
+                   android:layout_below="@+id/Semi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/amount_"
+                   android:text="2,000*1"
+                   android:textSize="10dp"
+                   android:layout_toRightOf="@+id/Semi"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginLeft="26dp"
+                   android:layout_below="@+id/amount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/amount20"
+                   android:text="2,000"
+                   android:textSize="10dp"
+                   android:layout_below="@+id/amount2"
+                   android:layout_marginTop="8dp"
+                   android:layout_toRightOf="@+id/amount"
+                   android:layout_marginLeft="26dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+               <TextView
+                   android:layout_marginTop="8dp"
+                   android:text="Total Annual Due Amount is:"
+                   android:textSize="10dp"
+                   android:layout_below="@+id/rotary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:text="4,000*1"
+                   android:layout_toRightOf="@+id/Semi"
+                   android:layout_marginTop="8dp"
+                   android:visibility="invisible"
+                   android:layout_marginLeft="26dp"
+                   android:textSize="10dp"
+                   android:layout_below="@+id/amount_"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/amount200"
+                   android:text="24,800"
+                   android:textSize="10dp"
+                   android:layout_below="@+id/amount20"
+                   android:layout_marginTop="8dp"
+                   android:layout_toRightOf="@+id/amount"
+                   android:layout_marginLeft="26dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+
+       </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card4"
+            android:layout_below="@+id/card3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtHead4"
+                    android:text="Fee Dues for Spouse Member*"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Semi_1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:text="Semi-Annual Due Amount is:"
+                    android:layout_below="@+id/txtHead4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/amount_1"
+                    android:text="13,000*2[cheque]"
+                    android:layout_toRightOf="@+id/Semi_1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/txtHead4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/amount2_1"
+                    android:text="26,000"
+                    android:layout_below="@+id/txtHead4"
+                    android:layout_toRightOf="@+id/amount_1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rotary_1"
+                    android:layout_marginTop="8dp"
+                    android:textSize="10dp"
+                    android:text="Rotary Thane Premium Trust:"
+                    android:layout_below="@+id/Semi_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/amount_3"
+                    android:text="4,000*1"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/Semi_1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/amount2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/amount20_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/amount2_1"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@+id/amount_1"
+                    android:text="4,000" />
+
+
+                <TextView
+                    android:id="@+id/total_1"
+                    android:layout_marginTop="8dp"
+                    android:text="Total Annual Due Amount is:"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/rotary_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="4,000*1"
+                    android:layout_toRightOf="@+id/total_1"
+                    android:layout_marginTop="8dp"
+                    android:textSize="10dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="26dp"
+                    android:layout_below="@+id/amount20_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/amount200_"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount_3"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/amount_1"
+                    android:text="26,000" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/card4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtHead5"
+                android:text="Important Note*"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Semi_2"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:text="Pay Annual Fee Due Before 15th July of every year."
+                android:layout_below="@+id/txtHead5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Pay Semi-Annual Free Due Before 15th Jan of every year         "
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:layout_below="@+id/Semi_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

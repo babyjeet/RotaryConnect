@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    tools:context="com.android.aquagiraffe.rotaryconnect.PastPresidentsActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nRotary member Past President"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:footerDividersEnabled="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector" />
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.aquagiraffe.rotaryconnect.RotaryLibraryActivity">
+
+    <TextView
+        android:id="@+id/txtBook"
+        android:text="Upload a Book"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtBook"
+        android:onClick="buttonClicked"
+        android:id="@+id/imgBook"
+        android:src="@drawable/plus"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/imgBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="25dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="40dp"/>
+
+    <include layout="@layout/footer" />
+
+</RelativeLayout>

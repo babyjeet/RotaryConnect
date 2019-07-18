@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewerPager">
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        ></include>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/footer"
+        android:background="#7aaeb3c0"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"/>
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/share"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Share"
+        android:textColor="#6079f2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_height="30dp"
+        app:dotsColor="#d7c9c9"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="#535A77"
+        app:progressMode="true"
+        />
+
+
+
+
+</RelativeLayout>

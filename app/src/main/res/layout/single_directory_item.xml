@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="#8e123b5b"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlmain"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+
+        <!-- Thumbnail Image -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/PROFILEPHOTO"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:textSize="13dip" />
+        </LinearLayout>
+        <!-- Movie Title -->
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/linear1"
+            android:layout_height="wrap_content">
+
+            <!-- Rating -->
+            <TextView
+                android:id="@+id/NAME"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/PROFILEPHOTO"
+                android:text="NAME"
+                android:textColor="#000"
+                android:textSize="13dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RCTP_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/PROFILEPHOTO"
+                android:layout_toRightOf="@+id/PROFILEPHOTO"
+                android:text="RCTP_ID"
+                android:textColor="#000"
+                android:textSize="13dip"
+                android:layout_below="@id/NAME"
+                android:textStyle="bold" />
+            <!-- Genre -->
+            <TextView
+                android:id="@+id/CLASSIFICATION"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NAME"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/PROFILEPHOTO"
+                android:text="CLASSIFICATION"
+                android:textColor="#000"
+                android:textSize="@dimen/genre"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- Release Year -->
+
+
+</RelativeLayout>

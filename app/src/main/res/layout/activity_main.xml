@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/rotarybackground"
+    android:layout_height="match_parent"
+    tools:context="com.android.aquagiraffe.rotaryconnect.MainActivity">
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_above="@+id/footer"
+        android:background="#bd182249"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"/>
+
+    <ImageView
+        android:id="@+id/imgRotary"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:interpolator="@anim/android_rotate_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/crossroads" />
+
+
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_below="@+id/imgRotary"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Welcome To RCTP Connect"
+        android:gravity="center"
+        android:textColor="#e6e0e0"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Mobile Number:"
+        android:textColor="#e1d9d9"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_below="@+id/txtMobile"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_below="@+id/edtMobile"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Password:"
+        android:textColor="#e1d9d9"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/txtPassword"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="8"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <CheckBox
+
+            android:id="@+id/cbShowPwd"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#61737e"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/edtPassword"
+            android:layout_height="wrap_content"
+            android:textColor="#e1d9d9"
+            android:text="show_password" />
+
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_below="@+id/cbShowPwd"
+        android:layout_marginTop="10dp"
+        android:textColor="#e1d9d9"
+        android:layout_marginLeft="15dp"
+        android:text="Haven't Registered Yet?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtRegister1"
+        android:layout_below="@+id/cbShowPwd"
+        android:layout_toRightOf="@+id/txtRegister"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Register"
+        android:textColor="#e1d9d9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtRegister1"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/button_border"
+        android:textColor="#d6dbde"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+    </RelativeLayout>
+</RelativeLayout>

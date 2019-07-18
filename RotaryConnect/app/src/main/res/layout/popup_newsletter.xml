@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_popup"
+    android:padding="2dp"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        tools:ignore="ContentDescription" />
+
+
+    <EditText
+        android:id="@+id/edtNewsName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/ib_close"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="@string/enter_newsletter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+     <LinearLayout
+         android:id="@+id/llUpload"
+         android:orientation="horizontal"
+         android:layout_below="@+id/edtNewsName"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageButton
+             android:id="@+id/imgUpload"
+             android:background="@drawable/pdf_upload"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/txtFileName"
+             android:layout_weight="3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/llUpload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/upload_newsletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

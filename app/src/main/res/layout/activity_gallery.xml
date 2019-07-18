@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".GalleryActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#E1EAF0"
+        android:id="@+id/rl2"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bd182249"
+            app:contentInsetLeft="0dp"
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp" >
+
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:background="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/crossroads"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <TextView
+                android:id="@+id/txtAppbar"
+                android:layout_marginLeft="5dp"
+                android:text="RC Thane Premium\nGallery"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_recycler_view"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:onClick="buttonClicked"
+            android:src="@drawable/plus" />
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer" />
+
+</RelativeLayout>
+

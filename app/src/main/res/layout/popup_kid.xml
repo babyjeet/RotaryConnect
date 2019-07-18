@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners"
+    android:padding="2dp"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@+id/edtKidMobile"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/closenew"
+        tools:ignore="ContentDescription" />
+
+
+    <EditText
+        android:id="@+id/edtKidName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/ib_close"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="@string/enter_kid_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:id="@+id/edtKidMobile"
+        android:layout_below="@+id/edtKidName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="10"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="@string/enter_kid_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edtKidMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/input_dob"
+            android:text="@string/hint_kid1Bday"
+            android:textSize="16dp"
+            android:paddingRight="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/input_layout_subvocation"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:typeface="monospace"
+            android:singleLine="true">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spnGender"
+        android:dropDownVerticalOffset="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:entries="@array/Gender"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/spnGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_border"
+        android:layout_marginBottom="20dp"
+        android:text="@string/save"
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

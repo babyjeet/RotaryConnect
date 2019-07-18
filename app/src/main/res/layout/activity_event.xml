@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nEvent"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/footer"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:hint="title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextborder"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/date"
+            android:text="Starting Date and Time"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/edtTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/date"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDate"
+                android:background="@drawable/bday_calendar"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="10dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imgDate"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/12/2018"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/date"
+            android:layout_toRightOf="@+id/linear"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgTime"
+                android:layout_width="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/linear"
+                android:layout_height="24dp"
+                android:layout_below="@+id/date"
+                android:background="@drawable/time"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_toRightOf="@+id/linear"
+                android:layout_below="@+id/imgTime"
+                android:layout_marginLeft="10dp"
+                android:text="12:30 am"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtEndDateTime"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtTitle"
+            android:layout_alignTop="@+id/date"
+            android:text="Ending Date and Time"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignStart="@+id/txtEndDateTime"
+            android:layout_alignTop="@+id/linear"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="24dp"
+                android:layout_alignStart="@+id/txtEndDateTime"
+                android:layout_alignTop="@+id/linear"
+                android:background="@drawable/bday_calendar"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/txtDate2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="22/08/2018"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/linear"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlCompat">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/linear"
+                android:background="@drawable/time"
+                tools:ignore="RtlCompat" />
+
+
+            <TextView
+                android:id="@+id/txtTime2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:30pm"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/txtTravelTime"
+            android:text="Duration"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_below="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/traveltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtTravelTime"
+            android:layout_below="@+id/linear4"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="14dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:text="Get Location"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtTravelTime"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/txtLocation1"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:paddingRight="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txtTravelTime"
+            android:layout_toEndOf="@+id/linear"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/edtOptional"
+            android:hint="others"
+            android:background="@drawable/edittextborder"
+            android:layout_below="@+id/txtLocation1"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgGps"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/edtOptional"
+            android:background="@drawable/gps" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:text="Message"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/edtOptional"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtmsg"
+            android:layout_below="@+id/txtMessage"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top|left"
+            android:layout_marginTop="10dp"
+            android:maxLines="10"
+            android:background="@drawable/edittextborder"
+            android:hint="message"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/btnAlert"
+            android:text="notification"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:background="@drawable/button_border"
+            android:shadowRadius="5"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/edtmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:background="@drawable/button_border"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/btnAlert"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

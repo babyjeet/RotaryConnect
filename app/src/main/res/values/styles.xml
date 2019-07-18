@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+
+    </style>
+
+
+    <style name="popup_window_animation_phone">
+        <item name="android:windowEnterAnimation">@anim/fade_in_animation</item>
+    </style>
+
+    <style name="popup_window_close_animation_phone">
+        <item name="android:windowEnterAnimation">@anim/fade_out_animation</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#d1d1d1</item>
+        <item name="android:dividerHeight">0.1dp</item>
+    </style>
+
+    <style name="AppThme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:dropDownListViewStyle">@style/SpinnerStyle</item>
+
+    </style>
+
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation" tools:ignore="DuplicateDefinition">@anim/fade_in_animation</item>
+        <item name="android:windowEnterAnimation" tools:ignore="DuplicateDefinition">@anim/fade_out_animation</item>
+    </style>
+
+
+
+</resources>

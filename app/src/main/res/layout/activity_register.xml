@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/rotarybackground"
+    android:layout_height="match_parent"
+    tools:context="com.android.aquagiraffe.rotaryconnect.RegisterActivity">
+
+    <include layout="@layout/footer"></include>
+
+    <RelativeLayout
+        android:background="#bd182249"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetLeft="0dp"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp" >
+
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nRegister"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgRotary"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/crossroads"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_below="@+id/imgRotary"
+        android:layout_width="match_parent"
+        android:textColor="#fffefe"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="10dp"
+        android:textColor="#fffefe"
+        android:layout_marginLeft="20dp"
+        android:text="Mobile Number:"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_below="@+id/txtMobile"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnOTP"
+        android:layout_below="@+id/edtMobile"
+        android:background="#00517E"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Get OTP"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtOTP"
+        android:layout_below="@+id/btnOTP"
+        android:layout_marginTop="10dp"
+        android:textColor="#fffefe"
+        android:layout_marginLeft="20dp"
+        android:text="OTP (4 Digit):"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtOTP"
+        android:layout_below="@+id/txtOTP"
+        android:background="@drawable/border"
+        android:inputType="numberPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_below="@+id/edtOTP"
+        android:layout_centerHorizontal="true"
+        android:background="#00517E"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

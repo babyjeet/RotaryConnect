@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_popup"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/llTopLine"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_weight="8"
+            android:background="#a8b5f8"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Change Password"
+                android:textColor="#ffffff"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:background="#6079f2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageButton
+                android:id="@+id/ib_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/close"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/llTopLine"
+        android:layout_marginTop="20dp"
+        android:maxLength="8"
+        android:inputType="textPassword"
+        android:hint="@string/change_pwd_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="TextFields" />
+
+
+
+    <EditText
+        android:id="@+id/edtCnfrmPassword"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:hint="@string/change_pwd_cnfrm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/txtInstruct"
+        android:layout_below="@+id/edtCnfrmPassword"
+        android:textColor="#6079f2"
+        android:layout_marginLeft="10dp"
+        android:text="* The password should be of 8 characters with no blank space"
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/txtInstruct"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/change_pwd"
+        android:background="#6079f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">RotaryConnect</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_membeerid">Member ID</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_dob">DDMMYYYY</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_orgnname">Organisation Name</string>
+    <string name="hint_classification">Classification</string>
+    <string name="hint_vocation">Vocation</string>
+    <string name="hint_subvocation">Sub-Vocation</string>
+    <string name="channel_name">OTP</string>
+
+    <string name="hint_spouseName">Spouse Name</string>
+    <string name="hint_spouseNumber">Spouse Number</string>
+    <string name="hint_spouseBday">Spouse Birthdate</string>
+    <string name="hint_anniversaryDate">Anniversary Date</string>
+    <string name="hint_kid1Name">Kid 1 Name</string>
+    <string name="hint_kid1Number">Kid 1 Number</string>
+    <string name="hint_kid1Bday">Kid 1 Birthday</string>
+    <string name="hint_kid2Name">Kid 2 Name</string>
+    <string name="hint_kid2Number">Kid 2 Number</string>
+    <string name="hint_kid2Bday">Kid 2 Birthday</string>
+    <string name="hint_kid3Name">Kid 3 Name</string>
+    <string name="hint_kid3Number">Kid 3 Number</string>
+    <string name="hint_kid3Bday">Kid 3 Birthday</string>
+
+    <string name="btn_sign_up">Next</string>
+    <string name="btn_skip">Skip>></string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+
+    <string name="err_msg_memberid">Enter your Member ID Properly</string>
+    <string name="err_msg_mobile">Enter valid Mobile Number</string>
+    <string name="err_msg_dob">Enter the Date of Birth</string>
+
+    <string name="err_msg_age">Enter your Age Properly</string>
+    <string name="err_msg_orgnname">Enter the Organisation Name Properly</string>
+    <string name="err_msg_classification">Enter the Classification Properly</string>
+
+    <string name="err_msg_vocation">Enter the Vocation Properly</string>
+    <string name="err_msg_subvocation">Enter the Sub-Vocation Properly</string>
+    /******************************************************************************************/
+    <string name="err_msg_spouseName">Enter your full name</string>
+    <string name="err_msg_spouseNumber">Enter valid email address</string>
+    <string name="err_msg_spouseBday">Enter the password</string>
+
+    <string name="err_msg_anniveryDate">Enter your Member ID Properly</string>
+    <string name="err_msg_kid1Name">Enter valid Mobile Number</string>
+    <string name="err_msg_kid1Number">Enter the Date of Birth</string>
+    <string name="err_msg_kid1Bday">Enter your Age Properly</string>
+    <string name="err_msg_kid2Name">Enter the Organisation Name Properly</string>
+    <string name="err_msg_kid2Number">Enter the Classification Properly</string>
+    <string name="err_msg_kid2Bday">Enter the Vocation Properly</string>
+    <string name="err_msg_kid3Name">Enter the Sub-Vocation Properly</string>
+    <string name="err_msg_kid3Number">Enter the Sub-Vocation Properly</string>
+    <string name="err_msg_kid3Bday">Enter the Sub-Vocation Properly</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="enter_kid_dob">Enter Kid DOB</string>
+    <string name="enter_kid_mobile_number">Enter Kid Mobile Number</string>
+    <string name="enter_kid_name">Enter Kid Name</string>
+    <string name="enter_newsletter_name">Enter Newsletter Name</string>
+    <string name="save">Save</string>
+    <string name="upload_newsletter">Upload Newsletter</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="mobile_number">Mobile Number:</string>
+    <string name="welcome_to_rctp_app">Welcome To RCTP App</string>
+    <string name="place">Place:</string>
+    <string name="title">Title:</string>
+    <string name="create_a_newsletter">Create a Newsletter</string>
+</resources>

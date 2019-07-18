@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners"
+    android:padding="2dp"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ib_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignRight="@+id/txtAlert"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/closenew"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ib_close"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Your rctp id is not set,Contact admin "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+       android:layout_centerVertical="true"
+        android:layout_below="@+id/txtAlert"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_border"
+        android:text="close"
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

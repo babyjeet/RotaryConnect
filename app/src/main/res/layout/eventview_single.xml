@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="8dp"
+        card_view:cardMaxElevation="6dp"
+        card_view:contentPadding="25dp"
+        card_view:cardElevation="10dp"
+        app:cardElevation="14dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:cardCornerRadius="4dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TittleOfEvent "
+                    android:textStyle="bold"
+                    android:textColor="#040404"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/txtTitleOfEvent"
+                    android:text="null"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:textStyle="bold"
+                    android:text="StartDateTime "
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txtStartDate1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="null"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/llImage"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtInstallment"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="EndDateTime "
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/txtEndDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/txtInstallment"
+                    android:layout_height="wrap_content"
+                    android:text="null"
+                    android:layout_marginLeft="11dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIR"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Duration "
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTravelTime"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/txtIR"
+                    android:text="null"
+                    android:layout_marginLeft="41dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Message "
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/txtmessage"
+                    android:layout_width="wrap_content"
+                    android:text="null"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Location "
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLocation1"
+                    android:text="null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="spcode"
+                    android:visibility="gone"
+                    android:textSize="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

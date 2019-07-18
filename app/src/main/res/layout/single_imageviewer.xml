@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            fresco:placeholderImage="@drawable/myPlaceholderImage"
+            android:layout_height="450dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+        <!--<ImageView
+            android:id="@+id/imgBlack"
+            android:background="#b5363636"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_above="@+id/view"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_above="@+id/view"
+            android:layout_marginBottom="-25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6079f2"
+            android:layout_marginTop="8dp"
+            android:text="name"
+            android:textSize="15dp" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/imageView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:text="name"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</LinearLayout>

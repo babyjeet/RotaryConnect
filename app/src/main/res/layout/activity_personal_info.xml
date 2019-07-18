@@ -1,0 +1,305 @@
+<RelativeLayout
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include layout="@layout/footer" />
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#8e123b5b"
+        android:layout_height="match_parent"
+        >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bd182249"
+            app:contentInsetLeft="0dp"
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp" >
+
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:background="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/crossroads"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <TextView
+                android:id="@+id/txtAppbar"
+                android:layout_marginLeft="5dp"
+                android:text="@string/personal_info"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="2dp"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:textSize="17dp"
+                    android:layout_below="@+id/txtLabel"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff1f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have spouse ?"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:text="Yes"
+                        android:textColor="#ffff"
+                        android:layout_width="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/No"
+                        android:text="No"
+                        android:textColor="#ffff"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_spouseName"
+                    android:layout_below="@+id/rg"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_spouseName"
+                        android:layout_width="match_parent"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_spouseName"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_spouseNumber"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_spouseName">
+
+                    <EditText
+                        android:id="@+id/input_spouseNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:hint="@string/hint_spouseNumber"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_spouseNumber"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:theme="@style/AppThme"
+                    android:id="@+id/spnSpGender"
+                    android:entries="@array/Gender1"/>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/spnSpGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/input_dob"
+                        android:text="@string/hint_spouseBday"
+                        android:textSize="16dp"
+                        android:paddingRight="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/input_layout_subvocation"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:typeface="monospace"
+                        android:singleLine="true">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/input_dob2"
+                        android:text="@string/hint_anniversaryDate"
+                        android:textSize="16dp"
+                        android:paddingRight="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/input_layout_subvocation"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:typeface="monospace"
+                        android:singleLine="true">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:text="Do you have child ?"
+                    android:layout_below="@+id/linear2"
+                    android:textSize="17dp"
+                    android:textColor="#e4e0e0"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/yes2"
+                        android:text="Yes"
+                        android:textColor="#ffff"
+                        android:layout_width="wrap_content"
+                        android:onClick="onRadioButtonClicked2"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/No2"
+                        android:text="No"
+                        android:textColor="#ffff"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="onRadioButtonClicked2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnAddKid"
+                    android:text="Add a Kid"
+                    android:visibility="gone"
+                    android:minHeight="30dp"
+                    android:background="@drawable/button_border"
+                    android:layout_below="@+id/rg2"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btnAddKid"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_border"
+                    android:minHeight="30dp"
+                    android:text="@string/btn_sign_up"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnAddKid"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/btn_next"
+                    android:background="@drawable/button_border"
+                    android:minHeight="30dp"
+                    android:text="@string/btn_skip"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

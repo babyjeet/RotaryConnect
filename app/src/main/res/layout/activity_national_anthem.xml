@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rotary_watermark"
+    tools:context=".NationalAnthem">
+
+    <android.support.v7.widget.Toolbar xmlns:app="schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bd182249"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/crossroads" />
+
+        <TextView
+            android:id="@+id/txtAppbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="RC Thane Premium\nNational Anthem"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/anthem"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/anthem2" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/txtLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/anthem"
+                android:background="@drawable/ic_play_circle_filled_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtLabel"
+                android:text="Play National Anthem"
+                android:textSize="16dp"
+                android:textColor="#053956"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/anthem"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_below="@+id/anthem"
+                android:layout_toRightOf="@+id/txtLabel"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_pause_circle_filled_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/fourway"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fourway2" />
+
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout
+        android:id="@+id/activity_main_tooltipRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-10dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourway"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:padding="4dp">
+
+
+        <Button
+            android:id="@+id/dues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_border"
+            android:padding="10dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:text="Dues"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourway"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_border"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Next"
+        android:textColor="#ffffff" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer" />
+
+
+</RelativeLayout>

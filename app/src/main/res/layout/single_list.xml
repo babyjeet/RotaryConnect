@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        card_view:cardMaxElevation="6dp"
+        card_view:contentPadding="25dp"
+        card_view:cardElevation="10dp"
+        app:cardElevation="14dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:text="TMA, Hall, Near Dwarka Hotel, Wagle Estate, Thane West"
+            android:textColor="#040404"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Press here to find out distance from your current location and traffic to reach you in time for meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
